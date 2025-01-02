@@ -44,10 +44,10 @@ const Grid = () => {
 	return (
 		<div className="">
 			<div className="">
-				<div className="">
-				<ul className="w-full mx-auto justify-center flex  gap-5 mb-10 ">
+				<div className="w-full mx-auto">
+				<ul className="w-6/12 mx-auto p-5 rounded-xl justify-center flex  gap-5 mb-10 text-white border-2 border-white">
                     {navbarOptions.map((option) => (
-                 <li className="cursor-pointer" key={option} onClick={() => setNavbar(option)} >
+                 <li className="cursor-pointer " key={option} onClick={() => setNavbar(option)} >
                  {option.toUpperCase()} </li> ))}
                 </ul>
 				</div>
