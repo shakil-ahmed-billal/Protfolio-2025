@@ -117,7 +117,7 @@ const Grid = () => {
           }}
         >
 					<BlurFade delay={0.24}>
-						<IconCard title="Linkedin" link="https://www.linkedin.com/in/joshuabrigati/" />
+						<IconCard title="Linkedin" link="https://www.linkedin.com/in/shakil-ahmed-billal" />
 					</BlurFade>
         </div>
         <div
@@ -128,7 +128,7 @@ const Grid = () => {
           }}
         >
 					<BlurFade delay={0.26}>
-						<IconCard title="Github" link="https://github.com/JoshuaBrigati" />
+						<IconCard title="Github" link="https://github.com/shakil-ahmed-billal" />
 					</BlurFade>
         </div>
         <div
@@ -139,7 +139,7 @@ const Grid = () => {
           }}
         >
 					<BlurFade delay={0.28}>
-						<IconCard title="Codepen" link="https://codepen.io/JoshuaBriagti/pens/showcase" />
+						<IconCard title="Codepen" link="https://github.com/shakil-ahmed-billal" />
 					</BlurFade>
         </div>
         <div
@@ -150,7 +150,7 @@ const Grid = () => {
           }}
         >
 					<BlurFade delay={0.30}>
-						<IconCard title="Email" link="mailto:brigati.joshua@gmail.com" />
+						<IconCard title="Email" link="mailto:itzxhakil@gmail.com" />
 					</BlurFade>
         </div>
         <div
