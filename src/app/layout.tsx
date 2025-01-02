@@ -6,20 +6,20 @@ import { silka } from "@/fonts";
 import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
-  title: "Joshua Brigati - Portfolio",
-  description: "A portfolio of Joshua Brigati, a Front-end Software Engineer based in Austin, Texas.",
+  title: "Shakil Ahmed - Portfolio",
+  description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Austin, Texas.",
   authors: [
-    { name: "Joshua Brigati", url: "www.joshuabrigati.com" },
+    { name: "Shakil Ahmed", url: "" },
   ],
   openGraph: {
-    title: "Joshua Brigati - Portfolio",
-    description: "A portfolio of Joshua Brigati, a Front-end Software Engineer based in Austin, Texas.",
-    url: "https://www.joshuabrigati.com",
-    siteName: "Joshua Brigati - Portfolio",
+    title: "Shakil Ahmed - Portfolio",
+    description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Austin, Texas.",
+    url: "",
+    siteName: "Shakil Ahmed - Portfolio",
     type: "website",
     images: [
       {
-        url: "https://www.joshuabrigati.com/Screenshot.png",
+        url: "",
         width: 3410,
         height: 2072,
         alt: "Joshua Brigati - Portfolio",
