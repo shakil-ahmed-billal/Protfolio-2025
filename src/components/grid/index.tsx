@@ -26,11 +26,14 @@ import {
 	DeveloperLandingCard,
 } from "@/components/cards";
 
+
 const ResponsiveGridLayout = WidthProvider(Responsive);
 
 const Grid = () => {
 	const [height, setHeight] = useState(280);
 	const [isMounted, setMounted] = useState(false);
+	const [navbarData , setNavbar] = useState('')
+	const navbarOptions = ["all", "about", "work"];
 
 	useEffect(() => {
 		setTimeout(() => {
@@ -39,11 +42,21 @@ const Grid = () => {
 	}, []);
 
 	return (
-		<div className={styles.container}>
+		<div className="">
+			<div className="">
+				<div className="">
+				<ul className="w-full mx-auto justify-center flex  gap-5 mb-10 ">
+                    {navbarOptions.map((option) => (
+                 <li className="cursor-pointer" key={option} onClick={() => setNavbar(option)} >
+                 {option.toUpperCase()} </li> ))}
+                </ul>
+				</div>
+			</div>
+			<div className={styles.container}>
 			<ResponsiveGridLayout
 				useCSSTransforms
 				className={styles.layout}
-				layouts={layouts.all}
+				layouts={navbarData === 'all' ? layouts.all : navbarData === 'about' ? layouts.about : layouts.work}
 				breakpoints={{
 					lg: 1199,
 					md: 799,
@@ -242,6 +255,7 @@ const Grid = () => {
 					</BlurFade>
 				</div>
 			</ResponsiveGridLayout>
+		</div>
 		</div>
 	);
 };

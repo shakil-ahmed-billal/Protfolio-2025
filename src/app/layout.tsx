@@ -5,11 +5,12 @@ import "./globals.scss";
 import { silka } from "@/fonts";
 import { ThemeProvider } from "next-themes";
 
+
 export const metadata: Metadata = {
   title: "Shakil Ahmed - Portfolio",
   description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Austin, Texas.",
   authors: [
-    { name: "Shakil Ahmed", url: "" },
+    { name: "Shakil Ahmed", url: "www.joshuabrigati.com" },
   ],
   openGraph: {
     title: "Shakil Ahmed - Portfolio",
@@ -26,6 +27,7 @@ export const metadata: Metadata = {
       },
     ],
   },
+  icons: { icon: "/profile.jpg", },
 };
 
 export default function RootLayout({
