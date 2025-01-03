@@ -8,22 +8,22 @@ import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Shakil Ahmed - Portfolio",
-  description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Austin, Texas.",
+  description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based Bangladesh, Dhaka.",
   authors: [
-    { name: "Shakil Ahmed", url: "www.joshuabrigati.com" },
+    { name: "Shakil Ahmed", url: "https://xhakil.vercel.app" },
   ],
   openGraph: {
     title: "Shakil Ahmed - Portfolio",
-    description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Austin, Texas.",
-    url: "",
+    description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Bangladesh, Dhaka.",
+    url: "https://xhakil.vercel.app",
     siteName: "Shakil Ahmed - Portfolio",
     type: "website",
     images: [
       {
-        url: "",
+        url: "https://xhakil.vercel.app/Screenshot.png",
         width: 3410,
         height: 2072,
-        alt: "Joshua Brigati - Portfolio",
+        alt: "Shakil Ahmed - Portfolio",
       },
     ],
   },
