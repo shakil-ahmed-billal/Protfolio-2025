@@ -10,8 +10,8 @@ const DeveloperLanding = () => {
         <div className="relative flex justify-between w-full h-full items-stretch flex-col">
           <div className="absolute h-full w-full aspect-[578/433] shadow-2xl rounded-lg">
             <Image
-              src={"/projects/Developer-landing.png"}
-              alt={"Developer landing page example"}
+              src={"/projects/project-6.png"}
+              alt={"best music landing page example"}
               fill
               style={{
                 objectFit: "cover",
@@ -31,27 +31,21 @@ const DeveloperLanding = () => {
                   height={12}
                   width={16}
                 />
-                Terraform Labs
+                Practice Project
               </span>
             </h4>
             <div className="w-full flex gap-2 items-center">
               <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
-                Developer Page for Terra
+                music player landing page
               </h1>
-              <SendmessageIcon link="https://developers.terra.money/" lottieName="DeveloperLandingIcon" />
+              <SendmessageIcon link="https://shakil-ahmed-billal.github.io/music-website" lottieName="gaming lending page" />
             </div>
             <div className="flex gap-2 flex-wrap mt-1">
               <Badge variant="default" className="text-xs">
-                Frontend + Design
+                Html
               </Badge>
               <Badge variant="default" className="text-xs">
-                React
-              </Badge>
-              <Badge variant="default" className="text-xs">
-                Typescript
-              </Badge>
-              <Badge variant="default" className="text-xs">
-                SCSS
+                CSS
               </Badge>
             </div>
           </div>

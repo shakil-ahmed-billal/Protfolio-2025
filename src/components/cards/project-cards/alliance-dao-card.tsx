@@ -10,8 +10,8 @@ const AllianceDao = () => {
         <div className="relative flex justify-between w-full h-full items-stretch flex-col">
           <div className="absolute h-full w-full aspect-[578/451] shadow-2xl rounded-lg">
             <Image
-              src={"/projects/Alliance-dao.png"}
-              alt={"Station landing page example"}
+              src={"/projects/project-4.png"}
+              alt={"Player buy-in BD"}
               fill
               style={{
                 objectFit: "cover",
@@ -31,30 +31,27 @@ const AllianceDao = () => {
                   height={12}
                   width={16}
                 />
-                Terraform Labs
+                Practice Project
               </span>
             </h4>
             <div className="w-full flex gap-2 items-center">
               <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
-                Alliance Dao NFT Site
+                Player buy-in BD
               </h1>
-              <SendmessageIcon link="https://dao.alliance.money/" lottieName="AllianceDaoIcon" />
+              <SendmessageIcon link="https://bpl-player-hub.netlify.app" lottieName="bpl-player" />
             </div>
             <div className="flex gap-2 flex-wrap mt-1">
-              <Badge variant="default" className="text-xs">
-                Frontend
-              </Badge>
               <Badge variant="default" className="text-xs">
                 React
               </Badge>
               <Badge variant="default" className="text-xs">
-                Typescript
+                Tailwindcss
               </Badge>
               <Badge variant="default" className="text-xs">
-                Figma
+                Rest API
               </Badge>
               <Badge variant="default" className="text-xs">
-                SCSS
+                Daisy UI
               </Badge>
             </div>
           </div>

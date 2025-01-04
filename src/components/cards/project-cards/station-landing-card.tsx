@@ -1,6 +1,6 @@
-import Image from "next/image"
-import { Badge } from "../../shadcn/Badge";
+import Image from "next/image";
 import SendmessageIcon from "../../lottie-ui/send-message";
+import { Badge } from "../../shadcn/Badge";
 import CardWrapper from "../card-wrapper";
 
 const StationLanding = () => {
@@ -10,13 +10,13 @@ const StationLanding = () => {
         <div className="relative flex justify-between w-full h-full items-stretch flex-col">
           <div className="absolute h-full w-full aspect-[578/433] shadow-2xl">
             <Image
-              src={"/projects/Station-money.png"}
+              src={"/projects/project-2.png"}
               alt={"Station landing page example"}
               fill
               style={{
                 objectFit: "cover",
                 objectPosition: "top",
-                borderRadius: "8px"
+                borderRadius: "8px",
               }}
             />
           </div>
@@ -31,36 +31,42 @@ const StationLanding = () => {
                 height={12}
                 width={16}
               />
-              Terraform Labs
+              Practice Project
             </span>
           </h4>
           <div className="w-full flex gap-2 items-center">
             <h1 className="text-2xl font-medium dark:text-white text-black uppercase opacity-90">
-              Station Landing Page
+            Coupon collection site
             </h1>
-            <SendmessageIcon link="https://station.money/" lottieName="StationLandingIcon" />
+            <SendmessageIcon
+              link="https://coupon-pro-bd.web.app/"
+              lottieName="coupon-pro"
+            />
           </div>
           <div className="flex gap-2 flex-wrap mt-1">
-            <Badge variant="default" className="text-xs">
-              Solo Developer
+          <Badge variant="default" className="text-xs">
+              React.js
             </Badge>
             <Badge variant="default" className="text-xs">
-              Nextjs
+              Tailwindcss
             </Badge>
             <Badge variant="default" className="text-xs">
-              Typescript
+              Firebase
             </Badge>
             <Badge variant="default" className="text-xs">
-              Figma
+              Node.js
             </Badge>
             <Badge variant="default" className="text-xs">
-              SCSS
+              Express.js
+            </Badge>
+            <Badge variant="default" className="text-xs">
+              MongoDB
             </Badge>
           </div>
         </div>
       </div>
     </CardWrapper>
-  )
-}
+  );
+};
 
-export default StationLanding
+export default StationLanding;

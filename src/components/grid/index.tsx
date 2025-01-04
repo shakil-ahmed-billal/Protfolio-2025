@@ -172,7 +172,7 @@ const Grid = () => {
             <BlurFade delay={0.28}>
               <IconCard
                 title="Codepen"
-                link="https://github.com/shakil-ahmed-billal"
+                link="https://codepen.io/shakil-ahmed-billal"
               />
             </BlurFade>
           </div>
@@ -209,6 +209,7 @@ const Grid = () => {
               <JobsCard />
             </BlurFade>
           </div>
+          {/* project add */}
           <div
             key="station-ui"
             className={cn(styles.itemGrab, styles.item)}

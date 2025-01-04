@@ -8,13 +8,13 @@ import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Shakil Ahmed - Portfolio",
-  description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based Bangladesh, Dhaka.",
+  description: "A portfolio of Shakil Ahmed, a MERN stack Developer based in Bangladesh, Dhaka..",
   authors: [
     { name: "Shakil Ahmed", url: "https://xhakil.vercel.app" },
   ],
   openGraph: {
     title: "Shakil Ahmed - Portfolio",
-    description: "A portfolio of Shakil Ahmed, a Front-end Software Engineer based in Bangladesh, Dhaka.",
+    description: "A portfolio of Shakil Ahmed, a MERN stack Developer based in Bangladesh, Dhaka.",
     url: "https://xhakil.vercel.app",
     siteName: "Shakil Ahmed - Portfolio",
     type: "website",
