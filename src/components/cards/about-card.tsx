@@ -17,7 +17,7 @@ const AboutCard = () => {
         </div>
 
         <p className="dark:text-white text-slate-900 tracking-wide leading-6 text-xs sm:text-sm">
-          "I’m a web developer dedicated to creating functional and
+          I am a web developer dedicated to creating functional and
           user-friendly websites. I specialize in delivering responsive designs
           that provide seamless experiences across all devices.
         </p>
