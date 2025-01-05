@@ -12,6 +12,11 @@ const jobsData = [
     collage: "Dhaka, Gazipur",
     date: "2018 - 2020",
   },
+  {
+    name: "ADBM High School (JSC)",
+    collage: "Dhaka, Gazipur",
+    date: "2015 - 2018",
+  },
 ];
 
 const JobItem = ({ job, active }: { job: any; active?: boolean }) => {

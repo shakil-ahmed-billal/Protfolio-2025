@@ -34,6 +34,8 @@ const Grid = () => {
   const [navbarData, setNavbar] = useState("all");
   const navbarOptions = ["all", "about", "work"];
 
+ 
+
   useEffect(() => {
     setTimeout(() => {
       setMounted(true);
@@ -82,7 +84,7 @@ const Grid = () => {
             md: 10,
             sm: 4,
           }}
-          isDraggable={true}
+          isDraggable={height >30}
           isResizable={true} //option to resize
           rowHeight={height}
           onBreakpointChange={(breakpoint: any) => {
