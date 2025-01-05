@@ -1,26 +1,26 @@
 "use client";
 
 import {
-	AboutCard,
-	AllianceDaoCard,
-	AllianceLandingCard,
-	DeveloperLandingCard,
-	IconCard,
-	JobsCard,
-	MapCard,
-	MyTechCard,
-	ResumeCard,
-	StationLandingCard,
-	StationSetupCard,
-	StationUICard,
-	TextMarqueeCard,
+  AboutCard,
+  AllianceDaoCard,
+  AllianceLandingCard,
+  DeveloperLandingCard,
+  IconCard,
+  JobsCard,
+  MapCard,
+  MyTechCard,
+  ResumeCard,
+  StationLandingCard,
+  StationSetupCard,
+  StationUICard,
+  TextMarqueeCard,
 } from "@/components/cards";
 import { heights, layouts } from "@/data";
 import cn from "classnames";
 import { useEffect, useState } from "react";
 import {
-	ResponsiveGridLayout as Responsive,
-	WidthProvider,
+  ResponsiveGridLayout as Responsive,
+  WidthProvider,
 } from "react-grid-layout-next";
 import BlurFade from "../magic-ui/blur-fade";
 import ThemeToggle from "../theme-toggle";
@@ -46,7 +46,12 @@ const Grid = () => {
         <div className="w-full absolute top-0  mx-auto">
           <ul className=" w-11/12 md:w-3/12 rounded-3xl items-center mx-auto py-2 px-4 border-[#ffffff29] border justify-evenly flex text-white text-xs gap-5 my-5">
             {navbarOptions.map((option) => (
-              <li className={navbarData === option ? ' cursor-pointer bg-[#0d1117] px-3 py-1 border border-[#ffffff29] rounded-3xl': 'cursor-pointer'}
+              <li
+                className={
+                  navbarData === option
+                    ? " cursor-pointer bg-[#0d1117] px-3 py-1 border border-[#ffffff29] rounded-3xl"
+                    : "cursor-pointer"
+                }
                 key={option}
                 onClick={() => setNavbar(option)}
               >
@@ -77,7 +82,8 @@ const Grid = () => {
             md: 10,
             sm: 4,
           }}
-          isDraggable={false}
+          isDraggable={true}
+          isResizable={true} //option to resize
           rowHeight={height}
           onBreakpointChange={(breakpoint: any) => {
             setHeight(heights[breakpoint]);
@@ -277,6 +283,21 @@ const Grid = () => {
             </BlurFade>
           </div>
         </ResponsiveGridLayout>
+      </div>
+      <div className="footer mb-10">
+        <div className="flex items-center justify-center h-12 text-white text-xs">
+          <span>
+            Made with ❤️ by{" "}
+            <a
+              className="hover:underline"
+              href="https://xhakil.vercel.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Shakil Ahmed
+            </a>
+          </span>
+        </div>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import { ThemeProvider } from "next-themes";
 
 export const metadata: Metadata = {
   title: "Shakil Ahmed - Portfolio",
-  description: "A portfolio of Shakil Ahmed, a MERN stack Developer based in Bangladesh, Dhaka..",
+  description: "A portfolio of Shakil Ahmed, a MERN stack Developer based in Bangladesh, Dhaka.",
   authors: [
     { name: "Shakil Ahmed", url: "https://xhakil.vercel.app" },
   ],
@@ -35,10 +35,14 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  
+  
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${silka.className}`}>
         <ThemeProvider attribute="class">
+        
           <div style={{
             flex: "none",
             height: "100%",

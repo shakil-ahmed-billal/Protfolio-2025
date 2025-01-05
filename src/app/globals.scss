@@ -105,3 +105,28 @@ a {
 .react-grid-item.react-draggable-dragging {
 	transition: none;
 }
+
+// cursor 
+.cursor__gradient {
+  position: fixed;
+  pointer-events: none; /* Ensure it doesn't block interactions */
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(45deg, #ff00cc, #3333ff);
+  border-radius: 50%;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+  animation: cursor-pulse 1.5s infinite;
+}
+
+@keyframes cursor-pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.6;
+  }
+}
