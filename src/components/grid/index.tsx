@@ -22,6 +22,7 @@ import {
   ResponsiveGridLayout as Responsive,
   WidthProvider,
 } from "react-grid-layout-next";
+import ButtonSend from "../Button/ButtonSend";
 import BlurFade from "../magic-ui/blur-fade";
 import ThemeToggle from "../theme-toggle";
 import styles from "./grid.module.scss";
@@ -33,8 +34,6 @@ const Grid = () => {
   const [isMounted, setMounted] = useState(false);
   const [navbarData, setNavbar] = useState("all");
   const navbarOptions = ["all", "about", "work"];
-
- 
 
   useEffect(() => {
     setTimeout(() => {
@@ -84,7 +83,7 @@ const Grid = () => {
             md: 10,
             sm: 4,
           }}
-          isDraggable={height >30}
+          isDraggable={height > 30}
           isResizable={true} //option to resize
           rowHeight={height}
           onBreakpointChange={(breakpoint: any) => {
@@ -285,20 +284,61 @@ const Grid = () => {
             </BlurFade>
           </div>
         </ResponsiveGridLayout>
+        <div className="border-[#ffffff29] border mb-5 mt-10"></div>
       </div>
-      <div className="footer mb-10">
-        <div className="flex items-center justify-center h-12 text-white text-xs">
-          <span>
-            Made with ❤️ by{" "}
-            <a
-              className="hover:underline"
-              href="https://xhakil.vercel.app"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Shakil Ahmed
-            </a>
-          </span>
+      <div className="max-w-[1170px] w-11/12 md:w-11/12 mx-auto mt-44 ">
+        <div className="w-full flex flex-col gap-5 justify-center h-12 text-white text-xs  ">
+          <p className="text-2xl font-semibold ">Contact Me</p>
+          <div className="flex gap-5 justify-between items-center">
+            <div className="w-6/12">
+              <p className="text-lg mb-2">Enter Your Name</p>
+              <input
+                className="w-full input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
+                type="text"
+                name=""
+                id=""
+                placeholder="Your Name"
+              />
+            </div>
+            <div className="w-6/12">
+              <p className="text-lg mb-2">Enter Your Email</p>
+              <input
+                className="w-full input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
+                type="text"
+                name=""
+                id=""
+                placeholder="Your Email"
+              />
+            </div>
+          </div>
+          <div className="">
+            <p className="text-lg mb-2">Subject</p>
+            <input
+              className="w-full mb-5 input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
+              type="text"
+              name=""
+              id=""
+              placeholder="Subject"
+            />
+            <p className="text-lg mb-2">Your Message</p>
+            <textarea
+              className="w-full input h-[100px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
+              name="write your message"
+              placeholder="Write your message...."
+              id=""
+            ></textarea>
+          </div>
+          <div className="">
+            <button className="mb-20">
+              <ButtonSend>Send Message</ButtonSend>
+            </button>
+            <div className="">
+              <p className="text-center mb-5">
+                Copyright © {new Date().getFullYear()} - All right reserved by
+                Programer Shakil Ahmed
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
