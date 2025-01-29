@@ -22,7 +22,6 @@ import {
   ResponsiveGridLayout as Responsive,
   WidthProvider,
 } from "react-grid-layout-next";
-import ButtonSend from "../Button/ButtonSend";
 import BlurFade from "../magic-ui/blur-fade";
 import ThemeToggle from "../theme-toggle";
 import styles from "./grid.module.scss";
@@ -43,24 +42,35 @@ const Grid = () => {
 
   return (
     <div className="">
-      <div>
-        <div className="w-full absolute top-0  mx-auto">
-          <ul className=" w-11/12 md:w-3/12 rounded-3xl items-center mx-auto py-2 px-4 border-[#ffffff29] border justify-evenly flex text-white text-xs gap-5 my-5">
-            {navbarOptions.map((option) => (
-              <li
-                className={
-                  navbarData === option
-                    ? " cursor-pointer bg-[#0d1117] px-3 py-1 border border-[#ffffff29] rounded-3xl"
-                    : "cursor-pointer"
-                }
-                key={option}
-                onClick={() => setNavbar(option)}
-              >
-                {option.toUpperCase()}{" "}
-              </li>
-            ))}
-          </ul>
-        </div>
+      {/* navbar section */}
+      <div className="w-full absolute top-16 mx-auto">
+        <ul className=" w-[270px]  rounded-3xl mx-auto p-1 border border-[#ffffff29] text-white text-xs relative flex items-center justify-center">
+          {/* Background highlight for active tab */}
+          <div
+            className={`${
+              navbarData === "all"
+                ? "translate-x-[-85px]"
+                : navbarData === "about"
+                ? "translate-x-[-5px]"
+                : navbarData === "work"
+                ? "translate-x-[85px]"
+                : ""
+            } bg-[#515963] border border-[#30363d] absolute text-white h-[90%] w-[90px] transition-all duration-700 rounded-full cursor-pointer`}
+          ></div>
+
+          {/* Navbar options */}
+          {navbarOptions.map((option) => (
+            <li
+              key={option}
+              className={`${
+                navbarData === option ? "text-white" : "text-white"
+              } px-6 py-2 z-20 transition-all duration-300 rounded-full cursor-pointer text-center`}
+              onClick={() => setNavbar(option)}
+            >
+              {option.toUpperCase()}
+            </li>
+          ))}
+        </ul>
       </div>
       <div className={styles.container}>
         <ResponsiveGridLayout
@@ -284,62 +294,6 @@ const Grid = () => {
             </BlurFade>
           </div>
         </ResponsiveGridLayout>
-        <div className="border-[#ffffff29] border mb-5 mt-10"></div>
-      </div>
-      <div className="max-w-[1170px] w-11/12 md:w-11/12 mx-auto mt-44 ">
-        <div className="w-full flex flex-col gap-5 justify-center h-12 text-white text-xs  ">
-          <p className="text-2xl font-semibold ">Contact Me</p>
-          <div className="flex gap-5 justify-between items-center">
-            <div className="w-6/12">
-              <p className="text-lg mb-2">Enter Your Name</p>
-              <input
-                className="w-full input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
-                type="text"
-                name=""
-                id=""
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="w-6/12">
-              <p className="text-lg mb-2">Enter Your Email</p>
-              <input
-                className="w-full input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
-                type="text"
-                name=""
-                id=""
-                placeholder="Your Email"
-              />
-            </div>
-          </div>
-          <div className="">
-            <p className="text-lg mb-2">Subject</p>
-            <input
-              className="w-full mb-5 input h-[44px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
-              type="text"
-              name=""
-              id=""
-              placeholder="Subject"
-            />
-            <p className="text-lg mb-2">Your Message</p>
-            <textarea
-              className="w-full input h-[100px] text-[14px] text-white/60 bg-[#09090b] text-[#f4f4f5] px-3 py-1 rounded-lg border border-white/10 focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2 focus:ring-offset-[#09090b] transition-all duration-150 ease-in-out"
-              name="write your message"
-              placeholder="Write your message...."
-              id=""
-            ></textarea>
-          </div>
-          <div className="">
-            <button className="mb-20">
-              <ButtonSend>Send Message</ButtonSend>
-            </button>
-            <div className="">
-              <p className="text-center mb-5">
-                Copyright © {new Date().getFullYear()} - All right reserved by
-                Programer Shakil Ahmed
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

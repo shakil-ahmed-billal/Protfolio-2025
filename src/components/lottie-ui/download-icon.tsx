@@ -52,7 +52,7 @@ const Download = () => {
 
   return (
     <a
-      href="/Resume.pdf"
+      href="/Shakil_Ahmed_Frontend_Developer_Resume.pdf"
       download
       className="relative z-10"
     >

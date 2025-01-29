@@ -52,7 +52,7 @@ const SendIcon = () => {
 
   return (
     <a
-      href="/Resume.pdf"
+      href="/Shakil_Ahmed_Frontend_Developer_Resume.pdf"
       target="_blank"
       rel="noreferrer noopener"
       className="relative z-10"
